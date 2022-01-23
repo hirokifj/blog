@@ -14,6 +14,31 @@ module.exports = {
           '@': path.resolve(__dirname, '../src'),
         },
       },
+      module: {
+        ...config.module,
+        rules: [
+          ...config.module.rules,
+          {
+            test: /\.scss$/,
+            use: [
+              'style-loader',
+              {
+                loader: 'css-loader',
+                options: {
+                  modules: {
+                    auto: true,
+                    localIdentName: '[name]__[local]--[hash:base64:5]',
+                  },
+                },
+              },
+              'sass-loader',
+            ],
+          },
+        ],
+      },
     }
+  },
+  core: {
+    builder: 'webpack5',
   },
 }

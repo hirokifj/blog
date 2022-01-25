@@ -12,6 +12,7 @@ module.exports = {
         alias: {
           ...config.resolve.alias,
           '@': path.resolve(__dirname, '../src'),
+          '@variables': path.resolve(__dirname, '../src/styles/variables.scss'),
         },
       },
       module: {

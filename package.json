@@ -9,6 +9,7 @@
     "lint": "next lint",
     "lint:style": "stylelint 'src/**/*.{css,scss,jsx,tsx}'",
     "format": "prettier --write --loglevel=warn 'src/**/*.{js,jsx,ts,tsx,css,scss,json}'",
+    "formatCheck": "prettier --loglevel=warn 'src/**/*.{js,jsx,ts,tsx,css,scss,json}'",
     "typecheck": "tsc --noEmit",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",

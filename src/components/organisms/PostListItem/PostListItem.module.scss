@@ -1,0 +1,43 @@
+@import '@variables';
+
+.item {
+  display: block;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.title {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-top: 10px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+
+  @include mq(md) {
+    border-color: var(--post-list-item-title-border-color);
+  }
+
+  &:hover {
+    border-color: var(--post-list-item-title-border-color);
+  }
+}
+
+.titleLink {
+  &:link,
+  &:visited {
+    color: currentColor;
+    text-decoration: none;
+  }
+}
+
+.date {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1;
+}

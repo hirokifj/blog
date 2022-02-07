@@ -1,0 +1,40 @@
+@import '@variables';
+
+.profile {
+  border-radius: 10px;
+  background-color: var(--profile-box-background-color);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding-block: 24px;
+  text-align: center;
+
+  @include mq(md) {
+    width: 70%;
+  }
+}
+
+.imgWrapper {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-inline: auto;
+}
+
+.name {
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+.description {
+  font-size: 14px;
+  margin-top: 24px;
+  line-height: 1.6;
+
+  p:not(:first-child) {
+    margin-top: 10px;
+  }
+}

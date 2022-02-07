@@ -1,11 +1,15 @@
 @import './reset';
 
 :root {
+  --content_max_width: 1050px;
+  --content-width: 95%;
+  --color-white: #fff;
   --color-gray-dark-1: #333;
   --color-gray-light-1: #f7fafc;
 
   --text-color: var(--color-gray-dark-1);
   --body-background-color: var(--color-gray-light-1);
+  --header-background-color: var(--color-white);
 }
 
 *,

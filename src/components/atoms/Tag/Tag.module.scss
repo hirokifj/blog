@@ -1,0 +1,11 @@
+@import '@variables';
+
+.tag {
+  display: inline-block;
+  color: var(--tag-text-color);
+  background-color: var(--tag-background-color);
+  padding: 6px 10px;
+  line-height: 1;
+  border-radius: 5px;
+  font-size: 14px;
+}

@@ -44,7 +44,8 @@
   h4,
   p,
   ul,
-  ol {
+  ol,
+  pre {
     margin-top: 20px;
   }
 
@@ -72,6 +73,16 @@
 
   a {
     color: var(--post-detail-link-color);
+  }
+
+  code {
+    font-size: 15px;
+  }
+
+  code:not([class]) {
+    padding: 2px 4px;
+    border-radius: 5px;
+    background-color: var(--color-gray-light-2);
   }
 
   img {

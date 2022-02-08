@@ -6,13 +6,20 @@
   --color-white: #fff;
   --color-gray-dark-1: #333;
   --color-gray-dark-2: #2d3748;
+  --color-gray-dark-3: #4a5568;
   --color-gray-light-1: #f7fafc;
+  --color-gray-light-2: #e2e8f0;
+  --color-blue-1: #1a0dab;
 
   --text-color: var(--color-gray-dark-1);
   --body-background-color: var(--color-gray-light-1);
   --header-background-color: var(--color-white);
   --footer-background-color: var(--color-white);
   --post-list-item-title-border-color: var(--color-gray-dark-1);
+  --post-detail-background-color: var(--color-white);
+  --post-detail-date-color: var(--color-gray-dark-3);
+  --post-detail-heading2-border-color: var(--color-gray-light-2);
+  --post-detail-link-color: var(--color-blue-1);
   --tag-text-color: var(--color-white);
   --tag-background-color: var(--color-gray-dark-2);
   --profile-box-background-color: var(--color-white);

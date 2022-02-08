@@ -1,0 +1,97 @@
+@import '@variables';
+
+.post {
+  border-radius: 10px;
+  background-color: var(--post-detail-background-color);
+  padding: 32px 24px;
+}
+
+.title {
+  font-size: 28px;
+  line-height: 1.6;
+}
+
+.tags {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.dateBox {
+  margin-top: 16px;
+  display: flex;
+  font-size: 14px;
+  color: var(--post-detail-date-color);
+
+  .date:first-child {
+    margin-right: 24px;
+  }
+}
+
+.content {
+  margin-top: 32px;
+  line-height: 1.6;
+
+  h2 {
+    margin-top: 32px;
+  }
+
+  h3 {
+    margin-top: 28px;
+  }
+
+  h4,
+  p,
+  ul,
+  ol,
+  pre {
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--post-detail-heading2-border-color);
+    padding-bottom: 6px;
+  }
+
+  h3 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  ul,
+  ol {
+    padding-left: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--post-detail-link-color);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  code {
+    font-size: 15px;
+  }
+
+  code:not([class]) {
+    padding: 2px 4px;
+    border-radius: 5px;
+    background-color: var(--color-gray-light-2);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

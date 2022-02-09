@@ -1,4 +1,3 @@
-import React from 'react'
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next'
 import { ParsedUrlQuery } from 'querystring'
 import { MyHead } from '@/components/functionals/MyHead'

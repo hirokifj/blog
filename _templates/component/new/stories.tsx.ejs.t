@@ -1,7 +1,6 @@
 ---
 to: "<%= withStoryBook ? `src/components/${category}/${path}/${name}/${name}.stories.tsx` : null %>"
 ---
-import React from 'react'
 import { Meta, Story } from '@storybook/react'
 import { <%= name %>, <%= name %>Props } from './<%= name %>'
 

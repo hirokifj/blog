@@ -8,7 +8,14 @@ module.exports = [
     type: 'select',
     name: 'category',
     message: 'Which Atomic design level?',
-    choices: ['atoms', 'molecules', 'organisms', 'templates', 'pages'],
+    choices: [
+      'atoms',
+      'molecules',
+      'organisms',
+      'templates',
+      'pages',
+      'functionals',
+    ],
   },
   {
     type: 'input',

@@ -1,7 +1,7 @@
 import React from 'react'
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next'
 import { ParsedUrlQuery } from 'querystring'
-
+import { MyHead } from '@/components/functionals/MyHead'
 import { Post, fetchPostById, fetchPostIds } from '@/features/posts'
 import { PostTemplate } from '@/components/templates/PostTemplate'
 
@@ -14,7 +14,12 @@ interface Params extends ParsedUrlQuery {
 }
 
 const PostPage: NextPage<Props> = ({ post }) => {
-  return <PostTemplate post={post} />
+  return (
+    <>
+      <MyHead title={post.title} />
+      <PostTemplate post={post} />
+    </>
+  )
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {

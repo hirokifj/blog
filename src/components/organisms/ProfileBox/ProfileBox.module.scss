@@ -14,6 +14,10 @@
   @include mq(md) {
     width: 70%;
   }
+
+  @include mq(sm) {
+    width: 90%;
+  }
 }
 
 .imgWrapper {
@@ -36,5 +40,31 @@
 
   p:not(:first-child) {
     margin-top: 10px;
+  }
+}
+
+.links {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconLink {
+  font-size: 28px;
+  transition: opacity 0.4s;
+
+  &:link,
+  &:visited {
+    color: var(--profile-box-icon-color);
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:first-child {
+    margin-right: 20px;
   }
 }

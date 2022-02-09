@@ -1,4 +1,3 @@
-import React from 'react'
 import { Meta, Story } from '@storybook/react'
 import { post } from '@/tests/data/posts'
 import { PostListItem, PostListItemProps } from './PostListItem'

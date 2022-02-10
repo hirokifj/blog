@@ -21,10 +21,10 @@ tags: ["雑記"]
 - TypeScript
 - CSS Modules
 - Storybook
-- jest
-- eslint, stylelint, prettier
-- GitHub Actions
-- hygen
+- Jest
+- ESLint, Stylelint, Prettier
+- GitHub Actions(CI)
+- Hygen
 - unified 関連（マークダウンファイルを取り扱うため）
 
 [GitHub](https://github.com/hirokifj/blog)
